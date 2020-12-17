@@ -14,10 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var coolDogImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let view = UIView()
-    
         coolDogImageView.applyDropShadow(color: UIColor.red, y:6, blur: 30)
-        
     }
 
     override func didReceiveMemoryWarning() {

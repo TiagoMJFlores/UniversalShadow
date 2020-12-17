@@ -20,26 +20,14 @@ public extension UIView {
         spread: CGFloat = 0) {
         
         let shadowView = UIView()
-     
-        shadowView.layer.masksToBounds = false
-        shadowView.layer.shadowColor = color.cgColor
-        shadowView.layer.shadowOpacity = alpha
-        shadowView.layer.shadowOffset = CGSize(width: x, height: y)
-        shadowView.layer.shadowRadius = blur / 2.0
         shadowView.backgroundColor = .white
-        
-        if spread == 0 {
-            shadowView.layer.shadowPath = nil
-        } else {
-          let dx = -spread
-            let rect = shadowView.bounds.insetBy(dx: dx, dy: dx)
-            shadowView.layer.shadowPath = UIBezierPath(rect: rect).cgPath
-        }
+        shadowView.layer.applyShadow(color: color, alpha: alpha, x: x, y: y, blur: blur, spread: spread, viewBounds: shadowView.bounds)
         superview?.insertSubview(shadowView, belowSubview: self)
         pin(view: shadowView)
         
       }
-
+    
+    
     private func pin(view: UIView) {
         view.translatesAutoresizingMaskIntoConstraints = false
         
