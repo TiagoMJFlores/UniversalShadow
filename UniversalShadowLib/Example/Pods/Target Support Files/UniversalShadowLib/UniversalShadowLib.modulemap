@@ -1,0 +1,6 @@
+framework module UniversalShadowLib {
+  umbrella header "UniversalShadowLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
