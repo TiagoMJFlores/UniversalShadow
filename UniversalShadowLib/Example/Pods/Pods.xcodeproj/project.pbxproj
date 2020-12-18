@@ -69,9 +69,10 @@
 		8D543DAD9A6C0B8BF8A5DB38AD876677 /* SatisfyAnyOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = A762D77E02E19BF3D9C72C830364E595 /* SatisfyAnyOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8D75EC8969EA46FBD6E1BED7791A3C37 /* BeLogical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570B465067B4A9E3E91FAC609212468F /* BeLogical.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		8E4A2F4A1EF16B63817A516CC2743619 /* Quick-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71519851BE602952F6A8B7F1BD49C47E /* Quick-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90A129E1258BAFD5005340BD /* UIView+UniversalShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A129E0258BAFD5005340BD /* UIView+UniversalShadow.swift */; };
-		90A129E8258BAFF1005340BD /* ShadowSide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A129E7258BAFF1005340BD /* ShadowSide.swift */; };
-		90A129FD258BB1A0005340BD /* CALayer+UniversalShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A129FC258BB19F005340BD /* CALayer+UniversalShadow.swift */; };
+		90A129E1258BAFD5005340BD /* UIView+DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A129E0258BAFD5005340BD /* UIView+DropShadow.swift */; };
+		90A723B6258D4C71005059EE /* InnerShadowConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A723B4258D4C71005059EE /* InnerShadowConfigurator.swift */; };
+		90A723B7258D4C71005059EE /* DropShadowConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A723B5258D4C71005059EE /* DropShadowConfigurator.swift */; };
+		90A723BE258D4C79005059EE /* UIView+InnerShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A723BD258D4C79005059EE /* UIView+InnerShadow.swift */; };
 		9231B70907F130F31CF5717C502B780C /* ExampleGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9FF41D5900AD165160731F2C227F18 /* ExampleGroup.swift */; };
 		94B18F2CFF543F6B2E43E84630C337E2 /* SuiteHooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A4C13D3E16F5CC104B4F9E6E0509CE1 /* SuiteHooks.swift */; };
 		94DA3131D64B3D904BE28E72F1871065 /* BeAKindOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3F49F23D9F10AE6C0599B84EFA0BB /* BeAKindOf.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -242,9 +243,10 @@
 		8A6BBF570610A2A47EAD3F82A0BEBD6F /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Quick/Filter.swift; sourceTree = "<group>"; };
 		8B43101E644D764134C4D7FDF2ED0CB2 /* Pods_UniversalShadowLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UniversalShadowLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D98EC2B9A6E8D71516EEE113E30C815 /* QuickTestObservation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestObservation.swift; path = Sources/Quick/QuickTestObservation.swift; sourceTree = "<group>"; };
-		90A129E0258BAFD5005340BD /* UIView+UniversalShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+UniversalShadow.swift"; path = "UniversalShadowLib/Classes/UIView+UniversalShadow.swift"; sourceTree = "<group>"; };
-		90A129E7258BAFF1005340BD /* ShadowSide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShadowSide.swift; path = UniversalShadowLib/Classes/ShadowSide.swift; sourceTree = "<group>"; };
-		90A129FC258BB19F005340BD /* CALayer+UniversalShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CALayer+UniversalShadow.swift"; path = "UniversalShadowLib/Classes/CALayer+UniversalShadow.swift"; sourceTree = "<group>"; };
+		90A129E0258BAFD5005340BD /* UIView+DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+DropShadow.swift"; path = "UniversalShadowLib/Classes/UIView+DropShadow.swift"; sourceTree = "<group>"; };
+		90A723B4258D4C71005059EE /* InnerShadowConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InnerShadowConfigurator.swift; sourceTree = "<group>"; };
+		90A723B5258D4C71005059EE /* DropShadowConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadowConfigurator.swift; sourceTree = "<group>"; };
+		90A723BD258D4C79005059EE /* UIView+InnerShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+InnerShadow.swift"; path = "UniversalShadowLib/Classes/UIView+InnerShadow.swift"; sourceTree = "<group>"; };
 		93B6D43CE5AA9C07E71CE985B2DD3556 /* RaisesException.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RaisesException.swift; path = Sources/Nimble/Matchers/RaisesException.swift; sourceTree = "<group>"; };
 		944BCB5D21E910CF01815DFA63020F8C /* CwlPreconditionTesting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CwlPreconditionTesting.h; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/include/CwlPreconditionTesting.h; sourceTree = "<group>"; };
 		954F6BC7A562658C4FAC057034F6DF28 /* mach_excServer.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mach_excServer.c; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlMachBadInstructionHandler/mach_excServer.c; sourceTree = "<group>"; };
@@ -512,6 +514,16 @@
 			path = "../Target Support Files/Quick";
 			sourceTree = "<group>";
 		};
+		90A723B3258D4C71005059EE /* Configurators */ = {
+			isa = PBXGroup;
+			children = (
+				90A723B4258D4C71005059EE /* InnerShadowConfigurator.swift */,
+				90A723B5258D4C71005059EE /* DropShadowConfigurator.swift */,
+			);
+			name = Configurators;
+			path = UniversalShadowLib/Classes/Configurators;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
@@ -537,9 +549,9 @@
 		D899BD5CD7CED992111235D3759CE288 /* UniversalShadowLib */ = {
 			isa = PBXGroup;
 			children = (
-				90A129FC258BB19F005340BD /* CALayer+UniversalShadow.swift */,
-				90A129E7258BAFF1005340BD /* ShadowSide.swift */,
-				90A129E0258BAFD5005340BD /* UIView+UniversalShadow.swift */,
+				90A129E0258BAFD5005340BD /* UIView+DropShadow.swift */,
+				90A723BD258D4C79005059EE /* UIView+InnerShadow.swift */,
+				90A723B3258D4C71005059EE /* Configurators */,
 				D02D69BEF854F2304CF177CD87E74D98 /* Pod */,
 				65FC9CC4491003609988955A645CB632 /* Support Files */,
 			);
@@ -921,10 +933,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90A129E8258BAFF1005340BD /* ShadowSide.swift in Sources */,
-				90A129FD258BB1A0005340BD /* CALayer+UniversalShadow.swift in Sources */,
 				A42BAB4CF51CF8AFDF67347738C7792B /* UniversalShadowLib-dummy.m in Sources */,
-				90A129E1258BAFD5005340BD /* UIView+UniversalShadow.swift in Sources */,
+				90A723B7258D4C71005059EE /* DropShadowConfigurator.swift in Sources */,
+				90A723BE258D4C79005059EE /* UIView+InnerShadow.swift in Sources */,
+				90A129E1258BAFD5005340BD /* UIView+DropShadow.swift in Sources */,
+				90A723B6258D4C71005059EE /* InnerShadowConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
