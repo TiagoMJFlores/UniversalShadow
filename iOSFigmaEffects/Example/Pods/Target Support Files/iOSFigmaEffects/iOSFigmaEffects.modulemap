@@ -1,0 +1,6 @@
+framework module iOSFigmaEffects {
+  umbrella header "iOSFigmaEffects-umbrella.h"
+
+  export *
+  module * { export * }
+}

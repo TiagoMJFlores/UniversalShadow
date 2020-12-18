@@ -1,0 +1,22 @@
+{
+  "name": "iOSFigmaEffects",
+  "version": "0.1.0",
+  "summary": "A short description of iOSFigmaEffects.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/tiagoflores2@outlook.com/iOSFigmaEffects",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "tiagoflores2@outlook.com": "tiagoflores2@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/tiagoflores2@outlook.com/iOSFigmaEffects.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "iOSFigmaEffects/Classes/**/*"
+}

@@ -1,0 +1,27 @@
+PODS:
+  - iOSFigmaEffects (0.1.0)
+  - Nimble (8.0.9)
+  - Quick (2.2.1)
+
+DEPENDENCIES:
+  - iOSFigmaEffects (from `../`)
+  - Nimble (~> 8.0.7)
+  - Quick (~> 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  iOSFigmaEffects:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  iOSFigmaEffects: c1a0323e92a1314d19b428824834b0057fe27a20
+  Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
+  Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+
+PODFILE CHECKSUM: edf773d4f8540229337c95eb118854a3a1acd716
+
+COCOAPODS: 1.9.1
