@@ -13,6 +13,57 @@ public extension UIView {
     struct BlurableKey {
         static var blurable = "blurable"
     }
+    
+    func applyBackgroundBlur(blur blurValue: CGFloat, image: UIImage) {
+        
+        // Adjust value to similar blur value as Figma
+        let radius = blurValue / 2.3
+        guard let superview = superview else { return }
+
+        let initialFrame = frame
+       // frame = CGRect.zero
+    
+        
+        guard let blur = CIFilter(name: "CIGaussianBlur") else { return }
+
+        blur.setValue(CIImage(image: image), forKey: kCIInputImageKey)
+        blur.setValue(radius, forKey: kCIInputRadiusKey)
+
+        let ciContext  = CIContext(options: nil)
+        guard let result = blur.value(forKey: kCIOutputImageKey) as? CIImage else { return }
+        let boundingRect = CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height)
+        guard let cgImage = ciContext.createCGImage(result, from: boundingRect) else { return }
+        let filteredImage = UIImage(cgImage: cgImage)
+
+        let blurOverlay = UIImageView()
+        blurOverlay.frame = boundingRect
+
+        blurOverlay.image = filteredImage
+        blurOverlay.contentMode = UIViewContentMode.left
+
+        if let stackView = superview as? UIStackView, let index = stackView.arrangedSubviews.index(of: self) {
+            self.removeFromSuperview()
+            stackView.insertArrangedSubview(blurOverlay, at: index)
+
+        } else {
+            blurOverlay.frame.origin = frame.origin
+
+            UIView.transition(from: self,
+                              to: blurOverlay,
+                              duration: 0.2,
+                              options: UIViewAnimationOptions.curveEaseIn,
+                              completion: nil)
+        }
+
+       
+        objc_setAssociatedObject(self,
+                                 &BlurableKey.blurable,
+                                 blurOverlay,
+                                 objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+        frame = initialFrame
+       
+    }
+
 
     func applyBlur(blur blurValue: CGFloat) {
         
@@ -65,7 +116,7 @@ public extension UIView {
                                  objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
     }
 
-    func unBlur() {
+    func applyUnBlur() {
         guard let blurOverlay = objc_getAssociatedObject(self, &BlurableKey.blurable) as? UIImageView else { return }
 
         if let stackView = blurOverlay.superview as? UIStackView, let index = stackView.arrangedSubviews.index(of: blurOverlay) {
