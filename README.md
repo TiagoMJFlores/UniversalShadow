@@ -89,9 +89,9 @@ coolDogImageView.applyLayerBlur(blur: 5)
 * color - shadow color
 * x - shadow shift in x
 * y -  shadow shift in y
+(If you want a shadow on the bottom, y is negative. Check Figma behavior)
 * blur - blur value
 * spread - shadow size in all directions
-(If you want a shadow on the bottom, y is negative. Check Figma behavior)
 * alpha - shadow transparecy
 
  
