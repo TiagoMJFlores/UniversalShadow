@@ -20,27 +20,29 @@ Which effects are available?
  
 
  
- <a><img src="https://github.com/TiagoMJFlores/iOSFigmaEffects/blob/main/iOSFigmaEffects/Resources/figmaeffects.jpg" align="left" height="250" >
- <div>Figma effects screen </div>
-</a>
-
+ ![Alt text](iOSFigmaEffects/Resources/figmaeffects.jpg=250?raw=true "Title")
+ 
  
 
  
  ### 1- Drop Shadow (or Outer Shadow)
+
+
+ ![Alt text](iOSFigmaEffects/Resources/dogdropshadow.jpg=250?raw=true "Title")
  
-  <a href="url"><img src="https://github.com/TiagoMJFlores/iOSFigmaEffects/blob/main/iOSFigmaEffects/Resources/dogdropshadow.jpg" align="left" height="250" ></a>
- 
+
 
  ### 2- Inner Shadow
  
-   <a href="url"><img src="https://github.com/TiagoMJFlores/iOSFigmaEffects/blob/main/iOSFigmaEffects/Resources/doginnershadow.jpg" align="left" height="250" ></a>
+ ![Alt text](iOSFigmaEffects/Resources/doginnershadow.jpg=250?raw=true "Title")
  
+
  
  ### 3- Layer Blur
  
-    <a href="url"><img src="https://github.com/TiagoMJFlores/iOSFigmaEffects/blob/main/iOSFigmaEffects/Resources/doglayerblur.jpg" align="left" height="250" ></a>
+  ![Alt text](iOSFigmaEffects/Resources/doglayerblur.jpg=250?raw=true "Title")
  
+
  
 How do I use it?
 -------------------
