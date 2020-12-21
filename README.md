@@ -49,9 +49,9 @@ Each effect is a method of a UIView Extension.
 
 Just do:
  ```swift 
-coolDogImageView.applyDropShadow(color: UIColor.red, spread: 4)
-coolDogImageView.applyInnerShadow(color: UIColor.red, y: 4)
-coolDogImageView.applyLayerBlur(blur: 5).
+coolDogImageView.applyDropShadow(color: UIColor.red, y: 4)
+coolDogImageView.applyInnerShadow(color: UIColor.red, spread: 4)
+coolDogImageView.applyLayerBlur(blur: 5)
 ```
 
  ### 1- Drop Shadow (or Outer Shadow) Parameters
