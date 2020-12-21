@@ -45,24 +45,32 @@ Which effects are available?
 How do I use it?
 -------------------
 
+Each effect is a method of a UIView Extension. 
+
+Just do:
+ ```swift 
+coolDogImageView.applyLayerBlur(blur: 5).
+```
+
  ### 1- Drop Shadow (or Outer Shadow)
  
  ```swift
  func applyDropShadow(
-         color: UIColor = .black,
-         x: CGFloat = 0,
-         y: CGFloat = 2,
-         blur: CGFloat = 4,
-         spread: CGFloat = 0,
-         alpha: Float = 0.5)
+         color: UIColor,
+         x: CGFloat,
+         y: CGFloat,
+         blur: CGFloat,
+         spread: CGFloat,
+         alpha: Float)
 ```
 
-color - shadow color
-x- shadow shift in x
-y-  shadow shift in y  (If you want a shadow on the bottom, y is positive. Check Figma behavior)
+* color - shadow color
+* x- shadow shift in x
+* y-  shadow shift in y 
+(If you want a shadow on the bottom, y is positive. Check Figma behavior)
 blur - blur value
-spread - shadow size in all directions
-alpha - shadow transparecy
+* spread - shadow size in all directions
+* alpha- shadow transparecy
  
  ### 2- Inner Shadow
  
@@ -76,12 +84,13 @@ alpha - shadow transparecy
         alpha: Float = 0)
 ```
 
-color - shadow color
-x- shadow shift in x
-y-  shadow shift in y
-blur - blur value
-spread - shadow size in all directions (If you want a shadow on the bottom, y is negative. Check Figma behavior)
-alpha - shadow transparecy
+* color - shadow color
+* x - shadow shift in x
+* y -  shadow shift in y
+* blur - blur value
+* spread - shadow size in all directions
+(If you want a shadow on the bottom, y is negative. Check Figma behavior)
+* alpha - shadow transparecy
 
  
  ### 3- Layer Blur
@@ -90,7 +99,8 @@ alpha - shadow transparecy
 func applyLayerBlur(blur blurValue: CGFloat) 
 ```
 
-blur - blur value (Blur values are approximate to those of Figma)
+* blur - blur value 
+(Blur values are approximate to those of Figma)
 
 
 Add iOSFigmaEffects to your project
