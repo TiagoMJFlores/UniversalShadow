@@ -20,7 +20,7 @@ Which effects are available?
  
 
  
- ![Alt text](iOSFigmaEffects/Resources/figmaeffects.jpg=250?raw=true "Title")
+ ![Alt text](iOSFigmaEffects/Resources/figmaeffects.jpg?raw=true)
  
  
 
@@ -28,19 +28,19 @@ Which effects are available?
  ### 1- Drop Shadow (or Outer Shadow)
 
 
- ![Alt text](iOSFigmaEffects/Resources/dogdropshadow.jpg=250?raw=true "Title")
+ ![Alt text](iOSFigmaEffects/Resources/dogdropshadow.jpg)
  
 
 
  ### 2- Inner Shadow
  
- ![Alt text](iOSFigmaEffects/Resources/doginnershadow.jpg=250?raw=true "Title")
+ ![Alt text](iOSFigmaEffects/Resources/doginnershadow.jpg)
  
 
  
  ### 3- Layer Blur
  
-  ![Alt text](iOSFigmaEffects/Resources/doglayerblur.jpg=250?raw=true "Title")
+  ![Alt text](iOSFigmaEffects/Resources/doglayerblur.jpg)
  
 
  
