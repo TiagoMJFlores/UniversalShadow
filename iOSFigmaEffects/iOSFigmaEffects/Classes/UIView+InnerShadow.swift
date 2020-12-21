@@ -14,7 +14,7 @@ public extension UIView {
         x: CGFloat = 0,
         y: CGFloat = 0,
         blur: CGFloat = 0.7,
-        spread: CGFloat = 20,
+        spread: CGFloat = 0,
         alpha: Float = 0) {
         
         let configurator = InnerShadowConfigurator()

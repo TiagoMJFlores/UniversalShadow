@@ -38,10 +38,8 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
     
-        coolDogImageView.applyDropShadow(color: UIColor.red, y: 4)
-        if #available(iOS 10, *) {
-        
-        } 
+        coolDogImageView.applyLayerBlur(blur: 5)
+
     }
     
 
