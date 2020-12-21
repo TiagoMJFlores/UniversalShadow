@@ -1,29 +1,51 @@
-# UniversalShadowLib
+iOSFigmaEffects
+========
+iOSFigmaEffects seeks to implement the main effects of the Design tool Figma following an interface similar to Figma.
 
-[![CI Status](https://img.shields.io/travis/tiagoflores2@outlook.com/UniversalShadowLib.svg?style=flat)](https://travis-ci.org/tiagoflores2@outlook.com/UniversalShadowLib)
-[![Version](https://img.shields.io/cocoapods/v/UniversalShadowLib.svg?style=flat)](https://cocoapods.org/pods/UniversalShadowLib)
-[![License](https://img.shields.io/cocoapods/l/UniversalShadowLib.svg?style=flat)](https://cocoapods.org/pods/UniversalShadowLib)
-[![Platform](https://img.shields.io/cocoapods/p/UniversalShadowLib.svg?style=flat)](https://cocoapods.org/pods/UniversalShadowLib)
+Why Figma?
+Figma was chosen because it's free up to two accounts and it's the main collaborative design tool.
 
-## Example
+iOSFigmaEffects...
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+ * reduces the communication gap between designers and programmers
+ * is ideal for a programmer who wants to learn more about design 
+ * is ideal for a programmer who wants to use Figma in their personal projects and have a fast start
 
-## Requirements
 
-## Installation
+Which effects are available?
+ -------------------
+ 
+ There are three main effects that are implemented:
+ Drop Shadow, Inner Shadow and Layer Blur.
+ 
+ ![alt text](https://github.com/TiagoMJFlores/iOSFigmaEffects/blob/master/Resources/figmaeffects.jpg?raw=true)
+ 
+ ### 1- Drop Shadow (or Outer Shadow)
 
-UniversalShadowLib is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+ ### 2- Inner Shadow
+ 
+ ### 3- Layer Blur
+ 
+ 
+ 
+How do I use it?
+-------------------
 
-```ruby
-pod 'UniversalShadowLib'
-```
+ ### 1- Drop Shadow (or Outer Shadow)
+ to do
+ 
+ ### 2- Inner Shadow
+ to do
+ 
+ ### 3- Layer Blur
+to do
 
-## Author
+Add iOSFigmaEffects to your project
+----------------------------
+(To do)
 
-tiagoflores2@outlook.com, tiagoflores2@outlook.com
+Requirements
+------------
+iOS 9+
 
-## License
 
-UniversalShadowLib is available under the MIT license. See the LICENSE file for more info.
