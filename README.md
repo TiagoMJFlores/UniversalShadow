@@ -104,7 +104,7 @@ func applyLayerBlur(blur blurValue: CGFloat)
 * blur - blur value 
 (Blur values are approximate to those of Figma)
 
-Note: The blur effect is almost a direct copy of [Blurable's!](https://github.com/FlexMonkey/Blurable) blur effect.
+Note: The blur effect is almost a direct copy of [Blurable's](https://github.com/FlexMonkey/Blurable) blur effect.
 
 
 Add iOSFigmaEffects to your project
