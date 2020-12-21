@@ -18,7 +18,8 @@ Which effects are available?
  There are three main effects that are implemented:
  Drop Shadow, Inner Shadow and Layer Blur.
  
- ![alt text](https://github.com/TiagoMJFlores/iOSFigmaEffects/blob/master/iOSFigmaEffects/Resources/figmaeffects.jpg?raw=true)
+ ![plot](iOSFigmaEffects/Resources/figmaeffects.jpg?raw=true)
+
  
  ### 1- Drop Shadow (or Outer Shadow)
 
