@@ -18,13 +18,11 @@ Which effects are available?
  There are three main effects that are implemented:
  Drop Shadow, Inner Shadow and Layer Blur.
  
-
  
  ![Alt text](iOSFigmaEffects/Resources/figmaeffects.jpg?raw=true)
- 
- 
 
  
+
  ### 1- Drop Shadow (or Outer Shadow)
 
 
@@ -48,13 +46,52 @@ How do I use it?
 -------------------
 
  ### 1- Drop Shadow (or Outer Shadow)
- to do
+ 
+ ```swift
+ func applyDropShadow(
+         color: UIColor = .black,
+         x: CGFloat = 0,
+         y: CGFloat = 2,
+         blur: CGFloat = 4,
+         spread: CGFloat = 0,
+         alpha: Float = 0.5)
+```
+
+color - shadow color
+x- shadow shift in x
+y-  shadow shift in y  (If you want a shadow on the bottom, y is positive. Check Figma behavior)
+blur - blur value
+spread - shadow size in all directions
+alpha - shadow transparecy
  
  ### 2- Inner Shadow
- to do
+ 
+  ```swift
+ func applyInnerShadow(
+        color: UIColor = .black,
+        x: CGFloat = 0,
+        y: CGFloat = 0,
+        blur: CGFloat = 0.7,
+        spread: CGFloat = 0,
+        alpha: Float = 0)
+```
+
+color - shadow color
+x- shadow shift in x
+y-  shadow shift in y
+blur - blur value
+spread - shadow size in all directions (If you want a shadow on the bottom, y is negative. Check Figma behavior)
+alpha - shadow transparecy
+
  
  ### 3- Layer Blur
-to do
+
+  ```swift
+func applyLayerBlur(blur blurValue: CGFloat) 
+```
+
+blur - blur value (Blur values are approximate to those of Figma)
+
 
 Add iOSFigmaEffects to your project
 ----------------------------
